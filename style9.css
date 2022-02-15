@@ -1,0 +1,91 @@
+body
+{
+    background-color: #3333ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    height: 650px;
+    
+}
+
+.word span
+{ 
+    font-size: 90px;
+    color: #3333ff;
+    animation: move1 4s infinite ;
+    animation-timing-function: ease-in-out;
+}
+@keyframes move1
+{
+    0%{transform: translateX(-40%)}
+    50%{text-shadow: 0px 20px 30px #e6ffff}
+    100%{transform: translateX(40%)}
+}
+.word span:nth-child(2)
+{
+    animation-delay: 0.5s;
+}
+.word span:nth-child(3)
+{
+    animation-delay: 1s;
+}
+.word span:nth-child(4)
+{
+    animation-delay: 1.5s;
+}
+.word span:nth-child(5)
+{
+    animation-delay: 2s;
+}
+.word span:nth-child(6)
+{
+    animation-delay: 2.5s;
+}
+.word span:nth-child(7)
+{
+    animation-delay: 3s;
+}
+.word span:nth-child(8)
+{
+    animation-delay: 3.5s;
+}
+.word span:nth-child(9)
+{
+    animation-delay: 4s;
+}
+.word span:nth-child(10)
+{
+    animation-delay: 4.5s;
+}
+p {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 40px;
+  
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, #3333ff, #000);
+  letter-spacing: 5px;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: relative;
+}
+#face:hover
+{
+    color: red;
+    
+}
+@keyframes shine {
+  0% {
+    background-position-x: -600%;
+  }
+  100% {
+    background-position-x: 600%;
+  }
+}
+#d
+{
+    background: #000;
+}
